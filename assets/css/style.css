@@ -1,7 +1,7 @@
 /**
 * Customized for Mahmoud Shoush - AI Researcher
+* Color palette: #003366 (primary), #41657d (secondary), #595959 (gray)
 * Based on iPortfolio template (BootstrapMade)
-* Changes: hero gradient, accent color, typography, spacing
 */
 
 /*--------------------------------------------------------------
@@ -9,24 +9,26 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: #595959;
   line-height: 1.6;
   font-size: 1rem;
 }
 
 a {
-  color: #0d6efd;  /* more modern blue, was #149ddd */
+  color: #003366;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
-  color: #0b5ed7;
+  color: #41657d;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
+  color: #003366;
 }
 
 /*--------------------------------------------------------------
@@ -39,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0d6efd;
+  background: #003366;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -53,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #0b5ed7;
+  background: #41657d;
 }
 
 .back-to-top.active {
@@ -73,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   padding: 0 15px;
-  background: #0a1128; /* slight variant, was #040b14 */
+  background: #003366;
   overflow-y: auto;
 }
 
@@ -81,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #1f2a48; /* lighter border */
+  border: 8px solid #41657d;
 }
 
 #header .profile h1 {
@@ -101,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1f2a48;
+  background: #41657d;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -114,8 +116,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #0d6efd;
-  color: #fff;
+  background: #fff;
+  color: #003366;
 }
 
 #main {
@@ -153,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #cbd5e1;
+  color: #d4e0e9;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -164,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #7086b0;
+  color: #b0c4de;
 }
 
 .nav-menu a:hover,
@@ -178,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i {
-  color: #0d6efd;
+  color: #fff;
 }
 
 /* Mobile Navigation */
@@ -191,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #0d6efd;
+  background-color: #003366;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -212,19 +214,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section - Modern Gradient Background
+# Hero Section - Gradient using your palette
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(135deg, #0a1128 0%, #1f2a48 100%);
+  background: linear-gradient(135deg, #003366 0%, #41657d 100%);
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.25);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -246,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
 }
 
 #hero p {
@@ -260,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #0d6efd;
+  border-bottom: 3px solid #fff;
 }
 
 @media (min-width: 1024px) {
@@ -288,7 +290,7 @@ section {
 }
 
 .section-bg {
-  background: #f8fafc;
+  background: #f5f7fa;
 }
 
 .section-title {
@@ -301,7 +303,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #0a1128;
+  color: #003366;
 }
 
 .section-title h2::after {
@@ -310,7 +312,7 @@ section {
   display: block;
   width: 60px;
   height: 3px;
-  background: #0d6efd;
+  background: #41657d;
   bottom: 0;
   left: 0;
 }
@@ -318,6 +320,7 @@ section {
 .section-title p {
   margin-bottom: 0;
   font-size: 1.1rem;
+  color: #595959;
 }
 
 /*--------------------------------------------------------------
@@ -326,7 +329,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #0a1128;
+  color: #003366;
 }
 
 .about .content ul {
@@ -342,12 +345,13 @@ section {
 
 .about .content ul strong {
   margin-right: 10px;
+  color: #003366;
 }
 
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #0d6efd;
+  color: #41657d;
   line-height: 0;
 }
 
@@ -359,13 +363,13 @@ section {
   font-weight: 700;
   margin-top: 30px;
   margin-bottom: 20px;
-  color: #0a1128;
+  color: #003366;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0d6efd;
+  border-left: 2px solid #41657d;
   position: relative;
 }
 
@@ -375,18 +379,19 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0a1128;
+  color: #003366;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
-  font-size: 16px;
-  background: #e9ecef;
+  font-size: 15px;
+  background: #eef2f5;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
   border-radius: 20px;
+  color: #41657d;
 }
 
 .resume .resume-item::before {
@@ -398,7 +403,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #0d6efd;
+  border: 2px solid #41657d;
 }
 
 /*--------------------------------------------------------------
@@ -421,52 +426,71 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #dee2e6;
+  color: #003366;
 }
 
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #003366;
 }
 
 /*--------------------------------------------------------------
-# Services (Professional Services) - small tweak
+# Services (Professional Services)
 --------------------------------------------------------------*/
 .services .icon {
-  background: #0d6efd;
-  border: 1px solid #0d6efd;
+  background: #003366;
+  border: 1px solid #003366;
+}
+
+.services .icon i {
+  color: #fff;
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: #41657d;
+  border-color: #41657d;
 }
 
 .services .icon-box:hover .icon i {
-  color: #0d6efd;
+  color: #fff;
+}
+
+.services .title a {
+  color: #003366;
 }
 
 .services .title a:hover {
-  color: #0d6efd;
+  color: #41657d;
 }
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact .info i {
-  color: #0d6efd;
-  background: #e3f2fd;
+  color: #003366;
+  background: #e6f0f9;
+}
+
+.contact .info h4 {
+  color: #003366;
+}
+
+.contact .info p {
+  color: #595959;
 }
 
 .contact .info .social-links a:hover {
-  background: #0d6efd;
+  background: #003366;
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #0d6efd;
+  background: #003366;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #0b5ed7;
+  background: #41657d;
 }
 
 /*--------------------------------------------------------------
@@ -480,7 +504,19 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 500;
-  color: #0a1128;
+  color: #003366;
+}
+
+.breadcrumbs ol li {
+  color: #595959;
+}
+
+.breadcrumbs ol li a {
+  color: #41657d;
+}
+
+.breadcrumbs ol li a:hover {
+  color: #003366;
 }
 
 /*--------------------------------------------------------------
@@ -495,7 +531,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #0a1128;
+  background: #003366;
 }
 
 #footer .copyright {
@@ -506,7 +542,15 @@ section {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
-  color: #9ca3af;
+  color: #b0c4de;
+}
+
+#footer .credits a {
+  color: #fff;
+}
+
+#footer .credits a:hover {
+  color: #d4e0e9;
 }
 
 @media (max-width: 1199px) {
@@ -518,7 +562,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Additional spacing for publication lists
+# Additional spacing & hover effects
 --------------------------------------------------------------*/
 .resume ul p, .resume ul li {
   line-height: 1.6;
@@ -526,15 +570,38 @@ section {
 }
 
 .resume .bi-file-earmark-text {
-  margin-right: 10px;
+  margin-right: 8px;
+  color: #41657d;
 }
 
-/* Ensure cards and sections have subtle shadows */
-.card, .portfolio-info, .services .icon-box {
+.portfolio-info, .services .icon-box {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .portfolio-info:hover, .services .icon-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 30px -15px rgba(0,0,0,0.1);
+}
+
+/* Buttons, badges, and interactive elements */
+.btn-primary, .btn-primary:hover {
+  background-color: #003366;
+  border-color: #003366;
+}
+
+.text-primary {
+  color: #003366 !important;
+}
+
+.bg-primary {
+  background-color: #003366 !important;
+}
+
+.border-primary {
+  border-color: #003366 !important;
+}
+
+/* Progress bars (if used) */
+.progress-bar {
+  background-color: #003366;
 }
